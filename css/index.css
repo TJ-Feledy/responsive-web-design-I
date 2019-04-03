@@ -63,86 +63,225 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
 body {
 	width: 876px;
 	margin: 0 auto;
 }
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+        padding: 20px;
+    }
+}
 
-header {
-	text-align: center;
+header {	
 	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
 }
-.topHeaderNav a {
-	margin: 0 30px 0px;
-	font-size: 14px;
-	text-align: center;
-	
-}
-.topHeaderNav {
-	display: inline-block;
-	margin-bottom: 50px;
-	margin-top: 20px;
-	vertical-align: middle;
+@media (max-width: 800px) {
+    header {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
-.logo {
-	display: inline-block;
-	margin: 15px 0 0 28px;
+.topHeaderNav a {
+	font-size: 14px;
+}
+
+.topHeaderNav {
+    display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	width: 600px;
+}
+
+.top-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+    .top-image {
+        display: none;
+    }
 }
 
 h1 {
-	display: inline-block;
-	font-size: 60px;
-	text-align: center;
-	margin-top: 80px;
-	margin: 80px 100px 
-
-	
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
 }
 
 .button {
-	display: inline-block;
-	vertical-align: middle;
-	padding: 5px 30px;
+	padding: 8px 40px;
 	background: white;
 }
 
-.top-image {
-	display: inline-block;
-	vertical-align: top;
+@media (max-width: 800px) {
+    .mid-section {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 }
 
-div.aboveImage {
-	display: inline-block;
-	width: 436px;
+.mid-top {
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 800px) {
+    .mid-top {
+        width: 100%;
+    }
+}
+
+div.aboveImage {	
 	margin-top: 40px;
 	margin-bottom: 40px;
-	padding-top: 40px;
+	padding-top: 35px;
 	border-top: 2px solid gray;
 }
 
-.belowImage {
-	display: inline-block;
-	width: 289px;
-	margin: 40px 0;
-	padding-bottom: 40px;
+@media(max-width: 800px) {
+    .middle-img {
+        width: 100%;
+    }
+}
+
+.mid-bottom {
+	display: flex;
+	justify-content: space-between;
 	border-bottom: 2px solid gray;
+}
+@media (max-width: 800px) {
+    .mid-bottom {
+        width: 100%;
+    }
+}
+
+.belowImage {	
+	margin: 40px 5px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+		
+}
+@media (max-width: 800px) {
+    footer {
+        width: 100%;
+    }
+}
+
+footer div.contactHeading {
+	margin: 0;
+	padding-top: 30px;
 }
 
 address {
 	width: 200px;
+	
 }
 
 .phoneNumber {
-	display: block;
-	margin: 20px 0;
+	margin: 12px 0;
 }
 
 .copyright {
 	margin: 40px 0 80px;
-	text-align: center;
+	align-self: center;
+}
+
+.logo {
+	height: 45px;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+@media (max-width: 800px) {
+    .logo {
+        margin-left: 0;
+    }
+}
+
+/* .services-header-img {
+	padding-bottom: 30px;
+	margin-top: -30px;
+}
+
+.intro {
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+.intro h2 {
+	font-size: 25px
+}
+
+.main-body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+p {
+	padding-bottom: 20px;
+}
+
+.main-body-div {
+	border: 1px solid black;
+	padding: 20px;
+	background: rgb(247, 233, 238);
+	height: 225px;
+	width: 420px;
+	margin-bottom: 36px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-evenly;	
+}
+
+.learn-more {
+	padding: 8px 40px;
+	background: white;
+}
+
+.services-footer {
+	height: 420px;
+	width: 457px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding-top: 30px;
+}
+
+.services-footer p {
+    padding-right: 50px;
+}
+
+.services-footer ul {
+	height: 170px;
+	margin-left: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style-type: square;
 	
-}/* Use your own code or past solution for Great Idea Web Page CSS here! */
+}
 
-
+.services-copyright {
+	text-align: center;
+	vertical-align: top;
+} */
