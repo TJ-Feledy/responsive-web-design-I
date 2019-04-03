@@ -150,6 +150,11 @@ div.aboveImage {
 	padding-top: 35px;
 	border-top: 2px solid gray;
 }
+@media (max-width: 800px) {
+    .aboveImage {
+        padding: 0 7px;
+    }
+}
 
 @media(max-width: 800px) {
     .middle-img {
@@ -171,6 +176,11 @@ div.aboveImage {
 .belowImage {	
 	margin: 40px 5px;
 }
+@media (max-width: 800px) {
+    .belowImage {
+        padding: 0 10px;
+    }
+}
 
 footer {
 	display: flex;
@@ -180,6 +190,7 @@ footer {
 @media (max-width: 800px) {
     footer {
         width: 100%;
+        padding: 0 10px;
     }
 }
 
@@ -201,6 +212,11 @@ address {
 	margin: 40px 0 80px;
 	align-self: center;
 }
+@media (max-width: 800px) {
+    .copyright {
+        margin-bottom: 20px;
+    }
+}
 
 .logo {
 	height: 45px;
@@ -210,6 +226,7 @@ address {
 @media (max-width: 800px) {
     .logo {
         margin-left: 0;
+        margin-bottom: 30px;
     }
 }
 
