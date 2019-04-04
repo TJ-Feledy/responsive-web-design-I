@@ -56,6 +56,13 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 500px) {
+    html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
@@ -64,8 +71,9 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-	width: 876px;
-	margin: 0 auto;
+	width: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 @media (max-width: 800px) {
     body {
@@ -83,11 +91,13 @@ body {
 header {	
 	margin-bottom: 30px;
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 @media (max-width: 800px) {
     header {
-        width: 100%;
+        width: auto;
         height: auto;
         flex-direction: column-reverse;
         align-items: center;
@@ -97,21 +107,24 @@ header {
 .logo {
 	height: 45px;
 	margin-top: 10px;
-	margin-left: 70px;
+    margin-left: 70px;
+    width: auto;
 }
 @media (max-width: 800px) {
     .logo {
         margin-left: 0;
         margin-bottom: 30px;
+        padding: auto;
+        width: auto;
+        height: auto;
     }
 }
 @media (max-width: 500px) {
     .logo {
-        margin: 0;
-        padding: 0 100% 20px;
+        margin: 0 0 20px;
+        padding: 0 auto 20px;
         width: auto;
         height: auto;
-        border-bottom: 2px solid lightgray
     }
 }
 
@@ -120,12 +133,25 @@ header {
 }
 @media (max-width: 500px) {
     .topHeaderNav a {
-        width: auto;
+        width: 100%;
         font-size: 18px;
-        padding: 20px 100%;
+        padding: 20px 0;
         color: rgb(163, 162, 162);
         text-decoration: none;
         border-bottom: 2px solid lightgray;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .topHeaderNav a:first-child {
+        width: 100%;
+        font-size: 18px;
+        padding: 20px 0;
+        color: rgb(163, 162, 162);
+        text-decoration: none;
+        border-bottom: 2px solid lightgray;
+        border-top: 2px solid lightgray;
+        text-align: center;
     }
 }
 
@@ -134,7 +160,13 @@ header {
 	justify-content: space-between;
 	margin-bottom: 50px;
 	margin-top: 30px;
-	width: 600px;
+	width: 100%;
+}
+@media (max-width: 800px) {
+    .topHeaderNav {
+        width: 100%;
+
+    }
 }
 @media (max-width: 500px) {
     .topHeaderNav {
@@ -142,6 +174,7 @@ header {
         flex-flow: column;
         align-items: center;
         margin: 0;
+        padding: auto;
     }
 }
 
@@ -149,7 +182,9 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
 }
 @media (max-width: 500px) {
     .top-section {
@@ -160,6 +195,10 @@ header {
     }
 }
 
+.top-image {
+    width: auto;
+    height: auto;
+}
 @media (max-width: 800px) {
     .top-image {
         display: none;
@@ -171,7 +210,9 @@ h1 {
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 70px;
+    font-size: 70px;
+    width: auto;
+    height: auto;
 }
 @media (max-width: 500px) {
     h1 {
@@ -189,6 +230,10 @@ h1 {
     }
 }
 
+.mid-section {
+    width: 100%;
+    height: auto;
+}
 @media (max-width: 800px) {
     .mid-section {
         width: 100%;
@@ -200,7 +245,8 @@ h1 {
 
 .mid-top {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
 }
 @media (max-width: 800px) {
     .mid-top {
@@ -218,7 +264,8 @@ div.aboveImage {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	padding-top: 35px;
-	border-top: 2px solid gray;
+    border-top: 2px solid gray;
+    width: 100%;
 }
 @media (max-width: 800px) {
     .aboveImage {
@@ -233,6 +280,10 @@ div.aboveImage {
     }
 }
 
+.middle-img {
+    width: 100%;
+    height: auto;
+}
 @media(max-width: 800px) {
     .middle-img {
         width: 100%;
@@ -248,7 +299,8 @@ div.aboveImage {
 .mid-bottom {
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 2px solid gray;
+    border-bottom: 2px solid gray;
+    width: 100%;
 }
 @media (max-width: 800px) {
     .mid-bottom {
@@ -262,7 +314,8 @@ div.aboveImage {
 }
 
 .belowImage {	
-	margin: 40px 5px;
+    margin: 40px 5px;
+    width: 100%;
 }
 @media (max-width: 800px) {
     .belowImage {
@@ -277,8 +330,8 @@ div.aboveImage {
 
 footer {
 	display: flex;
-	flex-direction: column;
-		
+    flex-direction: column;
+    width: 100%;		
 }
 @media (max-width: 800px) {
     footer {
@@ -289,21 +342,24 @@ footer {
 
 footer div.contactHeading {
 	margin: 0;
-	padding-top: 30px;
+    padding-top: 30px;
+    width: 100%;
 }
 
 address {
-	width: 200px;
-	
+    width: auto;
+    height: auto;
 }
 
 .phoneNumber {
-	margin: 12px 0;
+    margin: 12px 0;
+    width: auto
 }
 
 .copyright {
 	margin: 40px 0 80px;
-	align-self: center;
+    align-self: center;
+    width: auto;
 }
 @media (max-width: 800px) {
     .copyright {
