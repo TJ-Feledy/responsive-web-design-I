@@ -74,6 +74,11 @@ body {
         height: 100%;
     }
 }
+@media (max-width: 500px) {
+    body {
+        width: auto;
+    }
+}
 
 header {	
 	margin-bottom: 30px;
@@ -115,6 +120,7 @@ header {
 }
 @media (max-width: 500px) {
     .topHeaderNav a {
+        width: auto;
         font-size: 18px;
         padding: 20px 100%;
         color: rgb(163, 162, 162);
@@ -145,6 +151,14 @@ header {
 	justify-content: space-around;
 	margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+    .top-section {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 40px;
+        border-bottom: 2px solid gray;
+    }
+}
 
 @media (max-width: 800px) {
     .top-image {
@@ -159,10 +173,20 @@ h1 {
 	align-items: center;
 	font-size: 70px;
 }
+@media (max-width: 500px) {
+    h1 {
+        width: 100%;
+    }
+}
 
 .button {
 	padding: 8px 40px;
 	background: white;
+}
+@media (max-width: 500px) {
+    .button {
+        width: auto;
+    }
 }
 
 @media (max-width: 800px) {
@@ -183,6 +207,12 @@ h1 {
         width: 100%;
     }
 }
+@media (max-width: 500px) {
+    .mid-top {
+        flex-flow: column;
+        width: 100%;
+    }
+}
 
 div.aboveImage {	
 	margin-top: 40px;
@@ -195,10 +225,23 @@ div.aboveImage {
         padding: 0 7px;
     }
 }
+@media (max-width: 500px) {
+    div.aboveImage {
+        border-top: none;
+        margin: auto;
+        width: 100%;
+    }
+}
 
 @media(max-width: 800px) {
     .middle-img {
         width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .middle-img {
+        padding: 40px 0 10px;
     }
 }
 
@@ -212,6 +255,11 @@ div.aboveImage {
         width: 100%;
     }
 }
+@media (max-width: 500px) {
+    .mid-bottom {
+        flex-flow: column;
+    }
+}
 
 .belowImage {	
 	margin: 40px 5px;
@@ -219,6 +267,11 @@ div.aboveImage {
 @media (max-width: 800px) {
     .belowImage {
         padding: 0 10px;
+    }
+}
+@media (max-width: 500px) {
+    .belowImage {
+        width: 100%;
     }
 }
 
