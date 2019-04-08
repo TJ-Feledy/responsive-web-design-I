@@ -1,3 +1,443 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+@media (max-width: 500px) {
+    html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+	width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+    }
+}
+@media (max-width: 500px) {
+    body {
+        width: auto;
+    }
+}
+
+header {	
+	margin-bottom: 30px;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 800px) {
+    header {
+        width: auto;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.logo {
+	height: 45px;
+	margin-top: 10px;
+    margin-left: 70px;
+    width: auto;
+}
+@media (max-width: 800px) {
+    .logo {
+        margin-left: 0;
+        margin-bottom: 30px;
+        padding: auto;
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .logo {
+        margin: 0 0 20px;
+        padding: 0 auto 20px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.topHeaderNav a {
+	font-size: 14px;
+}
+@media (max-width: 500px) {
+    .topHeaderNav a {
+        width: 100%;
+        font-size: 18px;
+        padding: 20px 0;
+        color: rgb(163, 162, 162);
+        text-decoration: none;
+        border-bottom: 2px solid lightgray;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .topHeaderNav a:first-child {
+        width: 100%;
+        font-size: 18px;
+        padding: 20px 0;
+        color: rgb(163, 162, 162);
+        text-decoration: none;
+        border-bottom: 2px solid lightgray;
+        border-top: 2px solid lightgray;
+        text-align: center;
+    }
+}
+
+.topHeaderNav {
+    display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	width: 100%;
+}
+@media (max-width: 800px) {
+    .topHeaderNav {
+        width: 100%;
+
+    }
+}
+@media (max-width: 500px) {
+    .topHeaderNav {
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+        margin: 0;
+        padding: auto;
+    }
+}
+
+.top-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 500px) {
+    .top-section {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 40px;
+        border-bottom: 2px solid gray;
+    }
+}
+
+.top-image {
+    width: auto;
+    height: auto;
+}
+@media (max-width: 800px) {
+    .top-image {
+        display: none;
+    }
+}
+
+h1 {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+    font-size: 70px;
+    width: auto;
+    height: auto;
+}
+@media (max-width: 500px) {
+    h1 {
+        width: 100%;
+    }
+}
+
+.button {
+	padding: 8px 40px;
+	background: white;
+}
+@media (max-width: 500px) {
+    .button {
+        width: auto;
+    }
+}
+
+.mid-section {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 800px) {
+    .mid-section {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+.mid-top {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .mid-top {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .mid-top {
+        flex-flow: column;
+        width: 100%;
+    }
+}
+
+div.aboveImage {	
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 35px;
+    border-top: 2px solid gray;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .aboveImage {
+        padding: 0 7px;
+    }
+}
+@media (max-width: 500px) {
+    div.aboveImage {
+        border-top: none;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.middle-img {
+    width: 100%;
+    height: auto;
+}
+@media(max-width: 800px) {
+    .middle-img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .middle-img {
+        padding: 40px 0 10px;
+    }
+}
+
+.mid-bottom {
+	display: flex;
+	justify-content: space-between;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .mid-bottom {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .mid-bottom {
+        flex-flow: column;
+    }
+}
+
+.belowImage {	
+    margin: 40px 5px;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .belowImage {
+        padding: 0 10px;
+    }
+}
+@media (max-width: 500px) {
+    .belowImage {
+        width: 100%;
+    }
+}
+
+footer {
+	display: flex;
+    flex-direction: column;
+    width: 100%;		
+}
+@media (max-width: 800px) {
+    footer {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+footer div.contactHeading {
+	margin: 0;
+    padding-top: 30px;
+    width: 100%;
+}
+
+address {
+    width: auto;
+    height: auto;
+}
+
+.phoneNumber {
+    margin: 12px 0;
+    width: auto
+}
+
+.copyright {
+	margin: 40px 0 80px;
+    align-self: center;
+    width: auto;
+}
+@media (max-width: 800px) {
+    .copyright {
+        margin-bottom: 20px;
+    }
+}
 
 
+
+/* .services-header-img {
+	padding-bottom: 30px;
+	margin-top: -30px;
+}
+
+.intro {
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+.intro h2 {
+	font-size: 25px
+}
+
+.main-body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+p {
+	padding-bottom: 20px;
+}
+
+.main-body-div {
+	border: 1px solid black;
+	padding: 20px;
+	background: rgb(247, 233, 238);
+	height: 225px;
+	width: 420px;
+	margin-bottom: 36px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-evenly;	
+}
+
+.learn-more {
+	padding: 8px 40px;
+	background: white;
+}
+
+.services-footer {
+	height: 420px;
+	width: 457px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding-top: 30px;
+}
+
+.services-footer p {
+    padding-right: 50px;
+}
+
+.services-footer ul {
+	height: 170px;
+	margin-left: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style-type: square;
+	
+}
+
+.services-copyright {
+	text-align: center;
+	vertical-align: top;
+} */
